@@ -1,6 +1,6 @@
 export default {
   font: {
-    family: 'Releway, sans-serif',
+    family: 'Raleway, sans-serif',
     sizes: {
       disclaimer: '1.2rem',
       small: '1.4rem',
@@ -31,7 +31,7 @@ export default {
     white: '#ffffff',
     black: '#000000',
     neutral: {
-      500: '#8997ai2',
+      500: '#8997a2',
       700: '#1f272f',
       800: '#161a20',
       900: '#161c21',
@@ -41,6 +41,9 @@ export default {
     },
     red: {
       500: '#fc0043',
+    },
+    purple: {
+      500: '#6568F0',
     },
   },
   spacing: {
@@ -56,5 +59,8 @@ export default {
   borderStyles: {
     rounded: '50%',
     sm: '0.5rem',
+  },
+  transitions: {
+    fast: '300ms',
   },
 };

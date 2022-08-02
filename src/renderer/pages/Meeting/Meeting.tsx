@@ -1,4 +1,4 @@
-import Layout from 'renderer/ui/Layout';
+import { Layout } from 'renderer/ui';
 
 import * as S from './Meeting.styled';
 
