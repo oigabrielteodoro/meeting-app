@@ -9,7 +9,11 @@ export type ButtonProps = {
 const sizes = {
   middle: css`
     height: 3.4rem;
-    padding: ${theme.spacing[3]};
+    padding: 0 ${theme.spacing[3]};
+  `,
+  large: css`
+    height: 4.2rem;
+    padding: 0 ${theme.spacing[3]};
   `,
 };
 
@@ -34,9 +38,11 @@ const variants = {
 export const Button = styled.button<ButtonProps>`
   border: 0;
   border-radius: ${theme.borderStyles.sm};
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all ${theme.transitions.fast};
+  font-weight: ${theme.font.weights.medium};
 
   ${({ size }) => size && sizes[size]};
   ${({ variant }) => variants[variant]}

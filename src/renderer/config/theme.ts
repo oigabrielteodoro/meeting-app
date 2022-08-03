@@ -4,7 +4,7 @@ export default {
     header: '9rem',
   },
   font: {
-    family: 'Raleway, sans-serif',
+    family: 'Inter, sans-serif',
     sizes: {
       disclaimer: '1.2rem',
       small: '1.4rem',

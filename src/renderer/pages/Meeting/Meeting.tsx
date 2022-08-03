@@ -1,4 +1,5 @@
-import { Layout } from 'renderer/ui';
+import { Box, Layout } from 'renderer/ui';
+import { InviteUser, OnCall } from 'renderer/features/meeting';
 
 import * as S from './Meeting.styled';
 
@@ -8,7 +9,10 @@ export default function Meeting() {
       <Layout.Header />
       <Layout.Sider />
       <Layout.Content>
-        <h1>Content</h1>
+        <Box direction="horizontal" align="center" justify="between">
+          <OnCall />
+          <InviteUser />
+        </Box>
       </Layout.Content>
     </S.Container>
   );
