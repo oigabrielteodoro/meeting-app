@@ -23,6 +23,13 @@ export const GlobalStyle = createGlobalStyle`
     color: ${theme.colors.white};
 
     background: radial-gradient(39.79% 39.79% at 45.38% 70.7%, rgba(69, 104, 220, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(40.31% 50.83% at 50% 42.82%, rgba(92, 27, 58, 0.2) 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(42.57% 48.14% at 7.43% 90.23%, rgba(142, 45, 226, 0.2) 0%, rgba(25, 28, 34, 0) 100%) #191C22;
+    height: 100%;
+  }
+
+  #root {
+    height: 100%;
+  display: flex;
+  flex-direction: column;
   }
 
   button {

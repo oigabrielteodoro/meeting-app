@@ -37,6 +37,6 @@ export default styled.div<BoxProps>`
   ${({ full }) =>
     full &&
     css`
-      width: 100%;
+      flex: 1;
     `}
 `;

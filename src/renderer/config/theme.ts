@@ -64,6 +64,7 @@ export default {
     rounded: '50%',
     sm: '0.5rem',
     md: '0.8rem',
+    lg: '2.4rem',
   },
   transitions: {
     fast: '300ms',

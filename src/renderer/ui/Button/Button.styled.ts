@@ -33,6 +33,36 @@ const variants = {
       color: ${theme.colors.white};
     }
   `,
+  black: css`
+    background: ${theme.colors.neutral[900]};
+    color: ${theme.colors.neutral[500]};
+    transition: all ${theme.transitions.fast};
+    outline: 0.2rem solid transparent;
+    outline-offset: 0.4rem;
+
+    &:focus {
+      outline-color: ${theme.colors.neutral[900]};
+    }
+
+    &:hover {
+      color: ${theme.colors.white};
+    }
+  `,
+  red: css`
+    background: ${theme.colors.red[500]};
+    color: ${theme.colors.white};
+    transition: all ${theme.transitions.fast};
+    outline: 0.2rem solid transparent;
+    outline-offset: 0.4rem;
+
+    &:focus {
+      outline-color: ${theme.colors.red[500]};
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  `,
 };
 
 export const Button = styled.button<ButtonProps>`
@@ -49,9 +79,10 @@ export const Button = styled.button<ButtonProps>`
 `;
 
 export const ButtonIcon = styled(Button)`
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 4.2rem;
+  height: 4.2rem;
   display: grid;
   place-items: center;
   padding: 0;
+  border-radius: 1.2rem;
 `;
