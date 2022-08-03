@@ -1,4 +1,8 @@
 export default {
+  layout: {
+    sider: '8rem',
+    header: '9rem',
+  },
   font: {
     family: 'Raleway, sans-serif',
     sizes: {
@@ -59,6 +63,7 @@ export default {
   borderStyles: {
     rounded: '50%',
     sm: '0.5rem',
+    md: '0.8rem',
   },
   transitions: {
     fast: '300ms',

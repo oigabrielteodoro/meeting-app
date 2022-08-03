@@ -13,6 +13,7 @@ export const Container = styled.header`
   justify-content: space-between;
   padding: ${theme.spacing[4]};
   background: ${theme.colors.neutral[900]};
+  height: ${theme.layout.header};
 `;
 
 export const GridButton = styled(ButtonIcon)<GridButtonProps>`

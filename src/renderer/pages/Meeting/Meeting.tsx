@@ -6,6 +6,7 @@ export default function Meeting() {
   return (
     <S.Container>
       <Layout.Header />
+      <Layout.Sider />
     </S.Container>
   );
 }

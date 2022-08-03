@@ -18,6 +18,12 @@ const variants = {
     background: ${theme.colors.neutral[700]};
     color: ${theme.colors.neutral[500]};
     transition: all ${theme.transitions.fast};
+    outline: 0.2rem solid transparent;
+    outline-offset: 0.4rem;
+
+    &:focus {
+      outline-color: ${theme.colors.neutral[700]};
+    }
 
     &:hover {
       color: ${theme.colors.white};
