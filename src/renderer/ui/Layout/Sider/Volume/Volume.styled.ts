@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 4.2rem;
-  background: ${theme.colors.neutral[700]};
+  background: ${theme.colors.neutral[900]};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +28,15 @@ export const Range = styled.input`
     width: 1.6rem;
     height: 1.6rem;
     border-radius: ${theme.borderStyles.sm};
-    background: ${theme.colors.purple[500]} !important;
+    background: ${theme.colors.white} !important;
     cursor: pointer;
   }
 
-  &::after {
+  &:focus::-webkit-slider-thumb {
+    background: ${theme.colors.purple[500]} !important;
+  }
+
+  &:focus::after {
     content: '';
     position: absolute;
     background: ${theme.colors.purple[500]};

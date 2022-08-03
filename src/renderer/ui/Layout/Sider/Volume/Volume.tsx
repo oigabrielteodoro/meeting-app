@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { SpeakerHigh, SpeakerLow, SpeakerX } from 'phosphor-react';
 
+import Tooltip from 'renderer/ui/Tooltip';
 import * as S from './Volume.styled';
 
 const icons = {
@@ -40,9 +41,11 @@ export default function Volume() {
         onChange={(event) => setVolume(Number(event.target.value))}
       />
 
-      <S.SpeakerButton onClick={toggleStatus}>
-        <Icon size={20} />
-      </S.SpeakerButton>
+      <Tooltip message={`${volume}%`}>
+        <S.SpeakerButton onClick={toggleStatus}>
+          <Icon size={20} />
+        </S.SpeakerButton>
+      </Tooltip>
     </S.Container>
   );
 }
