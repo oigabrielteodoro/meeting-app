@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
-import * as S from './OnCall.styled';
+import * as S from './Time.styled';
 
-export default function OnCall() {
+export default function Time() {
   const [seconds, setSeconds] = useState(0);
 
   const timeOnCall = new Date(seconds * 1000).toISOString().slice(11, 19);

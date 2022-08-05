@@ -2,8 +2,8 @@ import { Box, Layout } from 'renderer/ui';
 import {
   Actions,
   InviteUser,
-  OnCall,
-  UserConnected,
+  Time,
+  UserOnCall,
 } from 'renderer/features/meeting';
 
 import * as S from './Meeting.styled';
@@ -16,14 +16,14 @@ export default function Meeting() {
       <Layout.Content>
         <Box direction="vertical" spacing={4} full>
           <Box direction="horizontal" align="center" justify="between">
-            <OnCall />
+            <Time />
             <InviteUser />
           </Box>
           <S.Container>
-            <UserConnected />
-            <UserConnected active />
-            <UserConnected />
-            <UserConnected />
+            <UserOnCall muted />
+            <UserOnCall active />
+            <UserOnCall />
+            <UserOnCall />
           </S.Container>
           <Actions />
         </Box>

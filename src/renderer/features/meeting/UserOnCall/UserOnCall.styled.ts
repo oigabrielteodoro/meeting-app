@@ -1,5 +1,6 @@
-import theme from 'renderer/config/theme';
+import { SpeakerSlash } from 'phosphor-react';
 import styled from 'styled-components';
+import theme from 'renderer/config/theme';
 
 export const Container = styled.div`
   background: rgba(73, 75, 77, 0.27);
@@ -11,10 +12,11 @@ export const Container = styled.div`
   height: 100%;
   display: grid;
   place-items: center;
+  position: relative;
+`;
 
-  img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: ${theme.borderStyles.rounded};
-  }
+export const SpeakerSlashIcon = styled(SpeakerSlash)`
+  position: absolute;
+  top: ${theme.spacing[4]};
+  left: ${theme.spacing[4]};
 `;

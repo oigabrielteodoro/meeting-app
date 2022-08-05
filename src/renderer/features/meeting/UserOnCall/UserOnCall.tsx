@@ -1,13 +1,16 @@
 import { Avatar } from 'renderer/ui';
-import * as S from './UserConnected.styled';
+
+import * as S from './UserOnCall.styled';
 
 type Props = {
+  muted?: boolean;
   active?: boolean;
 };
 
-export default function UserConnected({ active = false }: Props) {
+export default function UserOnCall({ active = false, muted }: Props) {
   return (
     <S.Container>
+      {muted && <S.SpeakerSlashIcon size={20} />}
       <Avatar
         size="large"
         src="https://github.com/oigabrielteodoro.png"
